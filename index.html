@@ -8,5 +8,76 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+    //   let Foo = () => {
+    //   console.log('foo', this)
+    // }
+    // console.log(Foo.prototype, 'foo.prototype')
+    // let f = new Foo()
+    // console.log(f)
+    // const foo = ''
+    // const result1 = foo || '默认值'
+    // const result2 = foo ?? '默认值'
+    // console.log(result1,12, result2,typeof result2,12)
+
+    // const bigInt = 9007199254740991n
+    // console.log(bigInt + 1n, bigInt + 2n)
+    
+    // 逻辑运算符
+    // let message = ''
+    // message ||='Hellow World'
+    // console.log(message)
+    // let obj = {
+    //   name:'why'
+    // }
+    // obj &&= obj.name
+    // console.log(obj)
+    // let foo = ''
+    // foo ??='默认值'
+    // console.log(foo)
+    //console.log(a=3)
+    // 'use strict'
+    // console.log(this)
+    // function foo () {
+    //   console.log(this)
+    // }
+    // var obj1 = {
+    //   name: 'obj1',
+    //   foo: foo
+    // }
+    // var obj2 = {
+    //   name: 'obj2'
+    // }
+    // obj1.foo();
+    // // 这个可以这么理解，当上一行代码执行了以后，其会向全局暴露出来所以下面执行了以后this就是变成了window了
+    // (obj2.foo = obj1.foo)()
+// console.log(Object({name:'adas'}),{name:'adas'})
+    /* Function.prototype.hyapply = function(thisBings,args){
+      thisBings = thisBings?Object(thisBings):window
+      thisBings.fn = this
+      if(!args){
+        thisBings.fn()
+      }else{
+        var result = thisBings.fn(...args)
+      }
+      delete thisBings.fn
+      return result
+    }
+    Function.prototype.hycall = function(thisBings,...args){
+      thisBings = thisBings? Object(thisBings):window
+      thisBings.fn = this
+      var result = thisBings.fn(...args)
+      delete thisBings.fn
+      return result
+    }
+    Function.prototype.hybind = function(thisBings,bindArgs){
+      thisBings = thisBings?Object(thisBings):window
+      thisBings.fn = this
+      return function(...newArgs){
+        var args = [...bindArgs,...newArgs]
+        return thisBings.fn(...args)
+      }
+    } */
+    </script>
   </body>
 </html>
