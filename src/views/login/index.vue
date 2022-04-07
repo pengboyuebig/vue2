@@ -124,6 +124,99 @@ export default {
     // }
     // obj2.obj1()
 
+    // 类数组转化成为真是数据的方法
+    /*  第一种方式
+    let length = arguments.length
+    let arr = []
+    for (let i = 0; i < length; i++) {
+      arr.push(arguments[i])
+    }
+    console.log(arr)
+    // 第二种方式
+    let arr0 = Array.prototype.slice.call(arguments)
+    let arr1 = [].slice.call(arguments)
+    // 第三种方式
+    let arr2 = Array.from(arguments)
+    let arr3 = [...arguments] */
+
+    // 函数的柯里化
+    // function add (num) {
+    //   return function (count) {
+    //     return num + count
+    //   }
+    // }
+    // let a = add(10)
+    // console.log(a, a(10), a(20), a(30))
+
+    /* let a1 = Array.prototype.slice.call(arguments)
+    let a2 = [].slice.call(arguments)
+    let a3 = Array.from(arguments)
+    let a4 = [...arguments] */
+
+    // 对象的高级写法
+    // let obj = {
+    //   name: '博越'
+    // }
+    // let address = '北京市'
+    // Object.defineProperty(obj, 'address', {
+    //   configurable: true,
+    //   enumerable: true,
+    //   // writable: true,
+    //   // value: 'age',
+    //   get: function () {
+    //     return address
+    //   },
+    //   set: function (value) {
+    //     console.log(value)
+    //     address = value
+    //   }
+    // })
+    // obj.address = 'sss'
+    // console.log(obj)
+
+    // test
+    // let obj = {
+    //   name: '伯约',
+    //   age: '23',
+    //   sex: '男',
+    //   color: 'sad'
+    // }
+    // let color = 'yellowgreen'
+    // let loveColor = 'yellow'
+    // Object.assign(obj, {
+    //   color: 'yellwogreen',
+    //   loveColor: 'yellow'
+    // })
+    // Object.defineProperties(obj, {
+    //   color: {
+    //     get: function () {
+    //       return color
+    //     },
+    //     set: function (value) {
+    //       color = value
+    //     }
+    //   },
+    //   loveColor: {
+    //     get: function () {
+    //       return loveColor
+    //     },
+    //     set: function (value) {
+    //       loveColor = value
+    //     }
+    //   }
+    // })
+    // obj.color = 'red'
+    // // obj.loveColor = 'yellow'
+    // console.log(obj)
+    function person (name, age, height, address) {
+      let p = {}
+      p.name = name
+      p.age = age
+      p.height = height
+      p.address = address
+      return p
+    }
+    console.log(person(12, 13, 14, 16))
   }
 
 }
