@@ -6,6 +6,10 @@ import router from './router'
 // 引入格式化的字体
 import './assets/css/base.css'
 // import store from './store'
+import selfD from './utils/directive'
+Vue.use(selfD)
+// import myPlugin from './utils/directive/indexOne'
+// Vue.use(myPlugin)
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({

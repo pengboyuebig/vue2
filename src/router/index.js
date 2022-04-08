@@ -3,11 +3,19 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-export const constantRoutes = [{
-  path: '/login',
-  name: 'login',
-  component: () => import('../views/login')
-}]
+export const constantRoutes = [
+  {
+    path: '/',
+    redirect: '/home'
+  }, {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login')
+  }, {
+    path: '/home',
+    name: 'home',
+    component: () => import('../views/home')
+  }]
 
 const createRouter = () => new Router({
   // mode: 'history', // require service support
