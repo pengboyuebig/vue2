@@ -7,6 +7,10 @@ import router from './router'
 import './assets/css/base.css'
 // import store from './store'
 import selfD from './utils/directive'
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
 Vue.use(selfD)
 // import myPlugin from './utils/directive/indexOne'
 // Vue.use(myPlugin)

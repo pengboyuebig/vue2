@@ -38,9 +38,9 @@
     </ul>
   </div> -->
   <div>
-    <form action="" method="post">
-      <input type="text">
-    </form>
+    <aside :style="{width,height}">
+      <div>111</div>
+    </aside>
   </div>
   </div>
 </template>
@@ -58,10 +58,15 @@ export default {
       excelData: {
         header: null,
         results: null
-      }
+      },
+      width: '200px',
+      height: '200px'
     }
   },
   methods: {
+    close () {
+      this.$emit('open')
+    },
     // 拖动上传
     handleDrop (e) {
       e.stopPropagation()
@@ -161,6 +166,9 @@ export default {
 </script>
 
 <style>
+aside{
+  background: red;
+}
 .ul_one{
   width: 100%;
   display: flex;

@@ -15,6 +15,10 @@ export const constantRoutes = [
     path: '/home',
     name: 'home',
     component: () => import('../views/home')
+  }, {
+    path: '/render',
+    name: 'render',
+    component: () => import('../views/render')
   }]
 
 const createRouter = () => new Router({
