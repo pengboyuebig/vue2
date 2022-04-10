@@ -227,7 +227,6 @@ export default {
 height: 200px;
 overflow-y: hidden;
 word-wrap: normal;
-/* white-space: pre-wrap; */
 color: #ff9700;
 }
 .main div{
@@ -274,9 +273,9 @@ width: 793px;
 height: 528px;
 background: url('../../assets/images/bg.png') no-repeat;
 background-size: 100% 100%;
-position: absolute;
+/* position: absolute;
 top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
+left: 50%; */
+/* transform: translateX(-50%) translateY(50%); */
 }
 </style>

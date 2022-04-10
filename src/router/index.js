@@ -10,15 +10,24 @@ export const constantRoutes = [
   }, {
     path: '/login',
     name: 'login',
-    component: () => import('../views/login')
+    component: () => import('../views/login'),
+    meta: {
+      title: '滚动条', alt: '设置滚动条效果'
+    }
   }, {
     path: '/home',
     name: 'home',
-    component: () => import('../views/home')
+    component: () => import('../views/home'),
+    meta: {
+      title: 'es6语法', alt: '语法学习还有上传的学习'
+    }
   }, {
     path: '/render',
     name: 'render',
-    component: () => import('../views/render')
+    component: () => import('../views/render'),
+    meta: {
+      title: '语法', alt: 'jsx语法的学习'
+    }
   }]
 
 const createRouter = () => new Router({
