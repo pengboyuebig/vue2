@@ -10,15 +10,21 @@ export default {
   render () {
     return (
       <div>
-        <span>{
+        <ul class="ul">{
           this.arr.map(item => {
             return <li>{item}</li>
           })
 
-        }</span>
+        }</ul>
         <el-button nativeType="reset" ></el-button>
+        <h1>测试jsx语法</h1>
       </div>
     )
   }
 }
 </script>
+<style scoped>
+.ul{
+  display: flex;
+}
+</style>
