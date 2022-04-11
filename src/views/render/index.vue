@@ -18,6 +18,13 @@ export default {
         }</ul>
         <el-button nativeType="reset" ></el-button>
         <h1>测试jsx语法</h1>
+        <div>
+          {
+            this.arr.map(item => {
+              return <span>{item}</span>
+            })
+          }
+        </div>
       </div>
     )
   }

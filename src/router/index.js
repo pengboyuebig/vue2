@@ -28,6 +28,13 @@ export const constantRoutes = [
     meta: {
       title: '语法', alt: 'jsx语法的学习'
     }
+  }, {
+    path: '/html',
+    name: 'html',
+    component: () => import('../views/html'),
+    meta: {
+      title: 'html5', alt: 'html5新增语法'
+    }
   }]
 
 const createRouter = () => new Router({
