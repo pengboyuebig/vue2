@@ -6,12 +6,16 @@ import router from './router'
 // 引入格式化的字体
 import './assets/css/base.css'
 // import store from './store'
-import selfD from './utils/directive'
+// import selfD from './utils/directive'
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-Vue.use(ElementUI)
-Vue.use(selfD)
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
+// Vue.use(ElementUI)
+// Vue.use(selfD)
+// 引入ant组件库
+import Antd from 'ant-design-vue'
+import 'ant-design-vue/dist/antd.css'
+Vue.use(Antd)
 // import myPlugin from './utils/directive/indexOne'
 // Vue.use(myPlugin)
 Vue.config.productionTip = false
