@@ -8,14 +8,16 @@ import './assets/css/base.css'
 // import store from './store'
 // import selfD from './utils/directive'
 
-// import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
-// Vue.use(ElementUI)
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 // Vue.use(selfD)
 // 引入ant组件库
-import Antd from 'ant-design-vue'
+import Antd, { Icon } from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+Vue.use(ElementUI)
 Vue.use(Antd)
+Icon.setTwoToneColor('#ff9700')
+Icon.getTwoToneColor()
 // import myPlugin from './utils/directive/indexOne'
 // Vue.use(myPlugin)
 Vue.config.productionTip = false

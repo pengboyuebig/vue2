@@ -2,11 +2,28 @@
   <div id="app">
     <!-- 测试的时候写的代码 -->
     <!-- <div class="co-20"></div> -->
-    <div v-if="$route.path!=='/login'||$route.path!=='/'">
+    <div v-if="$route.path==='/login'||$route.path==='/'">
       <router-view />
     </div>
     <div v-else>
-      <el-row>
+      <a-row>
+        <a-col :span="4">
+          <div class="main-selider">
+            <ul>
+              <li class="peng-li"
+                  v-for="(item ,index) in router"
+                  :key="index"
+                  :title="item.meta?item.meta.alt:''">
+                <router-link :to="item.path">{{item.meta?item.meta.title:''}}</router-link>
+              </li>
+            </ul>
+          </div>
+        </a-col>
+        <a-col :span="20">
+          <router-view />
+        </a-col>
+      </a-row>
+      <!-- <el-row>
         <el-col :span="5">
           <div class="main-selider">
             <ul>
@@ -23,7 +40,7 @@
         <el-col :span="17">
           <router-view />
         </el-col>
-      </el-row>
+      </el-row> -->
     </div>
   </div>
 </template>

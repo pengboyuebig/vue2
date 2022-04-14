@@ -53,6 +53,30 @@ export const constantRoutes = [
     meta: {
       title: '首页'
     }
+  },
+  {
+    name: 'antbtn',
+    path: '/antbtn',
+    component: () => import('../pagesPengPan/antbtn'),
+    meta: {
+      title: 'ant-btn'
+    }
+  },
+  {
+    name: 'elemetn',
+    path: '/elemetn',
+    component: () => import('../pagesPengPan/elemetn'),
+    meta: {
+      title: 'eleme-btn'
+    }
+  },
+  {
+    name: 'slotS',
+    path: '/slotS',
+    component: () => import('../pagesPengPan/slotS'),
+    meta: {
+      title: 'slot'
+    }
   }
 ]
 const createRouter = () => new Router({
